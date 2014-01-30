@@ -16,9 +16,11 @@ WRKSRC=		${WRKDIR}/js-1.8.5/js/src
 
 MAKE_JOBS_SAFE=	no
 
-NO_CONFIGURE=	yes
+GNU_CONFIGURE=yes
+USE_LANGUAGES=c++ c
+#NO_CONFIGURE=	yes
 USE_MULTIARCH=	lib
-USE_TOOLS+=	gmake pkg-config
+USE_TOOLS+=	gmake perl pkg-config
 MAKE_FILE=	Makefile.ref
 CFLAGS+=	-DJS_USE_FDLIBM_MATH=0
 
