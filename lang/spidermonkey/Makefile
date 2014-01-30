@@ -1,8 +1,8 @@
 # $NetBSD: Makefile,v 1.27 2013/07/15 02:02:24 ryoon Exp $
 
-DISTNAME=	js-1.8.0-rc1
-PKGNAME=	spidermonkey-1.8.0rc1
-PKGREVISION=	4
+DISTNAME=	js185-1.0.0
+PKGNAME=	spidermonkey-1.8.5
+#PKGREVISION=	4
 CATEGORIES=	lang
 MASTER_SITES=	${MASTER_SITE_MOZILLA_ALL:=js/}
 
@@ -12,7 +12,7 @@ COMMENT=	Standalone JavaScript implementation in C
 
 CONFLICTS=	js-[0-9]*
 
-WRKSRC=		${WRKDIR}/js/src
+WRKSRC=		${WRKDIR}/js-1.8.5/js/src
 
 MAKE_JOBS_SAFE=	no
 
@@ -54,7 +54,6 @@ post-extract:
 .if ${OPSYS} == "SunOS"
 	${CP} ${FILESDIR}/opensolaris.mk ${WRKSRC}/config/${BUILDDIRPREFIX}.mk
 .endif
-	${RM} ${WRKSRC}/lock_SunOS.s
 
 do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/${BUILDDIRPREFIX}_OPT.OBJ/js \
