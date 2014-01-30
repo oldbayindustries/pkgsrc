@@ -52,9 +52,9 @@ PLIST_SUBST+=	SO_SUFFIX=${SO_SUFFIX}
 .include "options.mk"
 
 post-extract:
-	${CP} ${FILESDIR}/pkgsrc.mk ${WRKSRC}/config
+	${CP} ${FILESDIR}/pkgsrc.mk ${WRKSRC}/ref-config
 .if ${OPSYS} == "SunOS"
-	${CP} ${FILESDIR}/opensolaris.mk ${WRKSRC}/config/${BUILDDIRPREFIX}.mk
+	${CP} ${FILESDIR}/opensolaris.mk ${WRKSRC}/ref-config/${BUILDDIRPREFIX}.mk
 .endif
 
 do-install:
