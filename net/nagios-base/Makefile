@@ -1,7 +1,7 @@
 # $NetBSD: Makefile,v 1.49 2013/09/04 12:31:26 obache Exp $
 #
 
-DISTNAME=		nagios-3.5.0
+DISTNAME=		nagios-3.5.1
 PKGNAME=		${DISTNAME:S/-/-base-/}
 PKGREVISION=		1
 CATEGORIES=		net sysutils
