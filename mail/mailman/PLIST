@@ -53,6 +53,8 @@ lib/mailman/Mailman/Bouncers/Yale.py
 lib/mailman/Mailman/Bouncers/Yale.pyc
 lib/mailman/Mailman/Bouncers/__init__.py
 lib/mailman/Mailman/Bouncers/__init__.pyc
+lib/mailman/Mailman/CSRFcheck.py
+lib/mailman/Mailman/CSRFcheck.pyc
 lib/mailman/Mailman/Cgi/Auth.py
 lib/mailman/Mailman/Cgi/Auth.pyc
 lib/mailman/Mailman/Cgi/__init__.py
